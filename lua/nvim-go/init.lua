@@ -1,4 +1,7 @@
-function formatAndSave(tool)
+local vim = vim
+local M = {}
+
+local function formatAndSave(tool)
   vim.api.nvim_exec('write', true)
   local fullname = vim.api.nvim_buf_get_name(0)
   -- TODO: error handling
@@ -9,7 +12,9 @@ function formatAndSave(tool)
   })
 end
 
-function gofumports() return formatAndSave('gofumports') end
-function goimports() return formatAndSave('goimports') end
-function gofmt() return formatAndSave('gofmt') end
-function gofumpt() return formatAndSave('gofumpt') end
+function M.gofumports() return formatAndSave('gofumports') end
+function M.goimports() return formatAndSave('goimports') end
+function M.gofmt() return formatAndSave('gofmt') end
+function M.gofumpt() return formatAndSave('gofumpt') end
+
+return M
