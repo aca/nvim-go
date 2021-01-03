@@ -4,7 +4,7 @@ let g:loaded_nvim_go = 1
 command! Gofumports lua require('nvim-go').gofumports()
 command! Gofumpt lua require('nvim-go').gofumpt()
 command! Goimports lua require('nvim-go').gofumports()
-command! Gofmt lua requrire('nvim-go').gofumpt()
+command! Gofmt lua require('nvim-go').gofumpt()
 
 cnoreabbrev gofumports Gofumports
 cnoreabbrev gofmt Gofmt

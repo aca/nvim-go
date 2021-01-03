@@ -1,1 +1,6 @@
 Personal replacement for vim-go.
+  
+    :Gofumport
+    :Gofumpt
+    :Goimports
+    :Gofmt
